@@ -1,0 +1,162 @@
+:root {
+
+    --normal-main-color: #C2FCF3;
+    --normal-font-size: 19px;
+    --background-btn-color: #00C5AB;
+    --background-btn-hover: #099c89;
+}
+
+
+.Content {
+
+    padding: 5rem 5rem 0 5rem;
+    margin-top: 5rem;
+    background-color: #FFEADA;
+    height: 20rem;
+}
+
+.Content header {
+
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 10rem;
+
+}
+
+.list {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    margin-top: 3rem;
+    grid-auto-rows: 13rem;
+    gap: 2rem;
+
+}
+
+.list li {
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-around;
+    background-color: #F0CFB6;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.list div {
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--normal-font-size);
+    padding: 1rem;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #FFEADA;
+
+}
+
+.Email {
+
+    padding: 10rem 6rem;
+
+
+}
+
+.Email h1 {
+
+    padding-bottom: 2rem;
+
+}
+
+.Email_info {
+
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Email_info form {
+
+    text-align: end;
+    width: fit-content;
+}
+
+.Email_info input {
+
+    padding: 0.3rem;
+    width: 15rem;
+    font-size: 0.8rem;
+    border: 1px solid black;
+
+}
+
+.Email_info .btn {
+
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border: none;
+    border: 1px solid black;
+    background-color: #F0CFB6;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-left: none;
+}
+
+
+@media (max-width: 1000px) {
+
+    .Content header {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-gap: 2rem;
+
+    }
+
+    .Content {
+
+        padding: 3rem;
+        height: auto;
+
+    }
+
+    .Email_info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .Email_info form {
+        margin-top: 2rem;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+
+}
+
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 1rem;
+    font-size: 15px;
+    color: white;
+
+}
+
+.footer p span {
+
+    color: #b38e40;
+    letter-spacing: 1px;
+}

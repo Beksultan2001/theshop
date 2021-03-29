@@ -1,0 +1,72 @@
+:root {
+
+    --normal-main-color: #C2FCF3;
+    --normal-font-size: 19px;
+    --background-btn-color: #00C5AB;
+    --background-btn-hover: #099c89;
+}
+
+
+.common {
+
+    padding: 7rem 3rem;
+
+}
+
+
+
+.search {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.common .search input {
+
+
+    width: 80%;
+    padding: 0.320rem;
+    /* height: 2rem; */
+    border: 1px solid black;
+    padding-left: 1rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+
+}
+
+.common .search .btn {
+
+    padding: 0.23rem;
+    border: 1px solid black;
+    background-color: white;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+
+
+}
+
+.common .search input:focus {
+
+    outline: none;
+
+
+}
+
+.common .search .btn:focus {
+
+    outline: none;
+
+
+}
+
+.common .search .btn:hover {
+
+    background-color: var(--background-btn-color);
+    color: white;
+
+}
