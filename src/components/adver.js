@@ -1,13 +1,13 @@
 import React,{useState,useEffect} from 'react';
 import '../App.css';
 import { FaSistrix} from 'react-icons/fa';
-
+import {Link} from 'react-router-dom';
 
 
 const Adver = () =>{
 
     const [item, setItem] = useState([]);
-
+    
     async function fetchUrl() {
 
         try {
@@ -17,6 +17,7 @@ const Adver = () =>{
           );
     
           let data = await newInfo.json();
+            
             
           let list = [];
           
@@ -28,7 +29,6 @@ const Adver = () =>{
           }
 
           setItem(list)
-          console.log(list)
 
         } catch (error) {
     
@@ -41,6 +41,7 @@ const Adver = () =>{
         fetchUrl();
 
       },[]);
+  
 
       const control = (id) =>{
         const newCollect = item.map((t) =>{
@@ -56,21 +57,27 @@ const Adver = () =>{
       }
 
       const control2 = (id) =>{
-        const newCollect = item.map((t) =>{
+          const newCollect = item.map((t) =>{
 
           if(t.id === id){
+
             t.boolean = false
+
           }
+
           return t
-        })
-        setItem(newCollect)
+
+        });
+
+        setItem(newCollect);
+
       }
 
-    
+      
     return(
 
         <div className = "Adver">
-            <h1>Featured Products</h1>
+            <h1 className = "Adver_title">Featured Products</h1>
             <span className = "line"></span>
             <div className = "Adver_container">
                 {item.map((t) =>{
@@ -81,7 +88,10 @@ const Adver = () =>{
                         <li key = {id} className = "Adver_each" onMouseOver = {() => control(id)} onMouseOut = {() => control2(id)}>
                             <div className = {`${boolean ? 'Adver_img show-hover': 'Adver_img'}`}>
                                 <img src = {image}></img>
-                                <span className = "hover"><div className = "circle"><FaSistrix /></div></span>
+                                <Link  to = {`/${id}`}>
+                                  <span className = "hover"><div className = "circle"><FaSistrix /></div></span>
+                                </Link>
+
                             </div>
                             <h3 className = "Adver_info">{name}<span>${price}</span></h3>
                         </li>
@@ -89,8 +99,9 @@ const Adver = () =>{
                 })}
 
             </div>
-            <button className = "main_btn Adver_btn">all products</button>
-            
+            <Link to = "/products">
+                <button className = "main_btn Adver_btn">all products</button>
+            </Link>            
         </div>
     )
 

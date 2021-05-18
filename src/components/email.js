@@ -1,6 +1,6 @@
 import React from 'react';
 import './content.css';
-
+import Footer from  './footer';
 
 
 const Email = () =>{
@@ -17,6 +17,7 @@ const Email = () =>{
                     <button className = "btn">Subscribe</button>
                 </form>
             </div>
+            {/* <Footer /> */}
         </section>
     )
      

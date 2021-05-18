@@ -3,14 +3,20 @@ import React from 'react';
 
 
 
-const Service = () =>{
+const Ajax = () =>{
+
+
+    
+
 
 
 
     return (
+        
         <h1></h1>
     )
 
+
 }
 
-export default Service
+export default Ajax;

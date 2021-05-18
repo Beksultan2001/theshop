@@ -4,12 +4,14 @@
     --normal-font-size: 19px;
     --background-btn-color: #00C5AB;
     --background-btn-hover: #099c89;
+
 }
 
 
 .common {
 
-    padding: 7rem 3rem;
+    padding: 7rem 4rem;
+
 
 }
 
@@ -20,22 +22,21 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
 }
 
+
 .common .search input {
 
-
-    width: 80%;
+    width: 30%;
     padding: 0.320rem;
     /* height: 2rem; */
     border: 1px solid black;
     padding-left: 1rem;
-    font-size: 18px;
+    /* font-size: 18px; */
     letter-spacing: 1px;
-
 
 }
 
@@ -47,26 +48,250 @@
     font-size: var(--normal-font-size);
     cursor: pointer;
 
-
 }
 
 .common .search input:focus {
 
     outline: none;
 
-
 }
 
+
 .common .search .btn:focus {
-
     outline: none;
-
-
 }
 
 .common .search .btn:hover {
-
     background-color: var(--background-btn-color);
     color: white;
+}
 
+
+.product_sort p {
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.eachCate {
+    text-transform: capitalize;
+}
+
+.eachCate.active {
+    text-decoration: underline;
+}
+
+.product_sort p:hover {
+    text-decoration: underline;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-gap: 1.5rem;
+    padding: 5rem 0.5rem 0 1.5rem;
+
+}
+
+
+.product_sort h2 {
+    letter-spacing: 1px;
+}
+
+.circle {
+    color: white;
+}
+
+@media(max-width: 550px) {
+
+    .product {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+@media(max-width: 650px) {
+
+    .product {
+
+        grid-gap: 4rem;
+
+    }
+
+    .product_sort h2 {
+        font-size: 17px;
+    }
+
+    .product_sort p {
+        font-size: 14px;
+    }
+
+
+}
+
+.product_container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 1.5rem;
+
+}
+
+/* .product_container {
+
+    display: flex;
+    flex-wrap: wrap;
+
+} */
+
+.product_each {
+
+    display: grid;
+    /* width: 15.625rem; */
+    /* height: 250px; */
+    margin: 1rem;
+    grid-template-rows: 80% 1fr;
+    transition: 2s ease-in-out;
+
+}
+
+.product_img {
+    position: relative;
+    max-height: 200px;
+    transition: 2s ease-in-out;
+}
+
+.product_img img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 2s ease-in-out;
+
+}
+
+.product_info {
+
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: var(--normal-font-size);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+
+.line {
+
+
+    display: block;
+    margin: 1rem auto;
+    width: 5rem;
+    height: 4px;
+    background-color: var(--background-btn-color);
+
+}
+
+.product_info span {
+    color: #b38e40;
+}
+
+
+.product_img.active .hover {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-transform: capitalize;
+}
+
+.about_main {
+
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-gap: 1.5rem;
+
+}
+
+.about_info {
+
+    margin-top: 1.5rem;
+
+}
+
+.about_title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.about_title span {
+
+    color: rgba(160, 139, 17, 0.6);
+    margin-left: 2px;
+}
+
+.lineAbout {
+
+    margin: 1rem 0 1rem 0;
+}
+
+.image img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.sortEach {
+
+    text-transform: capitalize;
+}
+
+.subTitle {
+    letter-spacing: 1px;
+}
+
+@media(max-width: 800px) {
+
+    .about_main {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(max-width: 500px) {
+
+    .common {
+        padding: 6rem 2rem;
+    }
+
+    .search input {
+        font-size: 11px;
+    }
+
+    .search input {
+        width: 10%;
+    }
+
+    .search {
+        justify-content: flex-end;
+    }
+}
+
+.nosearch {
+    text-align: center;
 }

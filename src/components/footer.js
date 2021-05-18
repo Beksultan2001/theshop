@@ -9,11 +9,13 @@ const Footer = () =>{
 
 
     return (
-        <footer className = "footer">
+        <div className = "firstfoot">
+            <footer className = "footernew">
             
-            <p>© 2021 <span>Beksultan.kz</span></p>
+                <p>© 2021 <span>Beksultan.kz</span></p>
 
-        </footer>
+            </footer>
+        </div>
     )
 
 }

@@ -1,0 +1,337 @@
+.basketList {
+
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+.basket_delete {
+
+    display: block;
+    width: 1.8rem;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    font-size: 19px;
+    padding: 0.1rem 0;
+    cursor: pointer;
+    justify-self: flex-end;
+    /* margin: 0 auto; */
+
+}
+
+.category {
+
+    display: grid;
+    grid-template-columns: 15rem 1fr 1fr 1fr 1fr;
+    padding: 4rem 4rem 1rem 4rem;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+
+}
+
+
+.basket_name {
+    align-self: flex-start;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-bottom: 1rem;
+
+}
+
+.basket_each {
+
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 15rem 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.basket_quan {
+
+    font-size: 25px;
+}
+
+.basket_quan span {
+
+    margin: 0 1rem 0 1rem;
+
+}
+
+.basket_quan button {
+    font-size: 25px;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+
+}
+
+.basket_price {
+    color: #339ABA;
+    letter-spacing: 2px;
+}
+
+.basket_color {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.basket_color span {
+
+    width: 18px;
+    height: 18px;
+    margin-left: 1rem;
+    border-radius: 5px;
+
+}
+
+.basket_each,
+.category li {
+
+    text-align: center;
+
+}
+
+.basket_image img {
+
+    width: 100%;
+    height: 5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    object-fit: cover;
+
+}
+
+.basket_info {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+.basket_both {
+
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+
+}
+
+.basket_both p {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.basket_color {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.basket_price {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.basket_buttons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    /* display: grid;
+    grid-template-columns: 15rem 1fr 1fr 1fr 1fr;
+    padding: 4rem;
+    grid-template-areas:
+        'continue continue continue continue clear'; */
+
+}
+
+
+.continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: continue;
+    height: 1.5rem;
+
+
+}
+
+
+.clear {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: clear;
+    height: 1.5rem;
+    background-color: black;
+
+}
+
+
+.lastline {
+
+    margin-top: 2rem;
+
+}
+
+.basket_total {
+
+    display: block;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 2rem;
+    border: 2px solid black;
+
+}
+
+.total_subtotal,
+.total_sum {
+    font-weight: 600;
+
+}
+
+.total_subtotal,
+.total_shipping,
+.total_sum {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.total_sum {
+
+    margin-top: 1rem;
+
+}
+
+.total_subtotal h4,
+.total_shipping h5,
+.total_sum h3 {
+    margin-left: 1rem;
+}
+
+
+.backEach {
+    cursor: pointer;
+}
+
+.backEach:hover {
+    transform: scale(1.1);
+}
+
+.add {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0rem 4rem;
+    margin-bottom: 4rem;
+
+}
+
+
+.btnBuy {
+
+
+    justify-self: flex-end;
+    width: 4rem;
+
+}
+
+.nobasket {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.bas_btn {
+
+    transform: scale(0.7);
+    /* padding: 0.3rem; */
+    margin: 0.5rem;
+
+}
+
+
+
+@media(max-width: 800px) {
+
+    .category {
+
+        display: none;
+
+    }
+
+
+
+    .basket_price {
+        display: none;
+    }
+
+
+
+    .basket_each {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+}
+
+@media(max-width: 500px) {
+
+    .basket_each {
+
+        transform: scale(0.9);
+
+    }
+
+    .continue {
+
+        transform: scale(0.9);
+        font-size: 11px;
+
+    }
+
+    .clear {
+        transform: scale(0.9);
+        font-size: 11px;
+
+    }
+
+    .forEach {
+        display: none;
+    }
+
+
+    .add {
+        transform: scale(0.7);
+    }
+
+
+
+
+}

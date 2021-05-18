@@ -2,22 +2,27 @@ import React from 'react';
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import {AiFillSafetyCertificate,AiFillSketchCircle,AiFillCodeSandboxCircle} from 'react-icons/ai';
 
+
+
 export const links = [
+
   {
     id: 1,
     url: '/',
     text: 'Home',
+    category: 'Home'
   },
   {
     id: 2,
     url: 'products',
-    text: 'Products',
+    text: 'products',
   },
   {
     id: 3,
     url: 'about',
     text: 'about',
   },
+  
 
   
 ];

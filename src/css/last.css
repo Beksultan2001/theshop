@@ -1,0 +1,42 @@
+.last_container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+    height: 100vh;
+
+}
+
+.last_container .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last_container .product {
+    pointer-events: none;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+    height: 300px;
+    width: 500px;
+}
+
+
+.last h1,
+.last h2,
+.last h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    margin-left: 0.25em;
+}

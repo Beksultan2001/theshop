@@ -13,6 +13,7 @@
     margin-top: 5rem;
     background-color: #FFEADA;
     height: 20rem;
+    
 }
 
 .Content header {
@@ -142,21 +143,3 @@
 
 }
 
-
-.footer {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    color: white;
-
-}
-
-.footer p span {
-
-    color: #b38e40;
-    letter-spacing: 1px;
-}
